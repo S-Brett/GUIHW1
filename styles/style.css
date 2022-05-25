@@ -16,10 +16,12 @@ header {
 	margin-top: 100px;
 	margin-bottom: 50px;
 	text-align: center;
+}
+
+#header-title {
 	font-size: 24px;
 	font-weight: 800;
 }
-
 
 /* Made sure to collapse the table so there is no space between cells  */
 table {
