@@ -1,0 +1,248 @@
+<!-- 
+	File: You can read the title
+	GUI Assignment: HW1
+	Brett Svendsen, UMass Lowell Computer Science, brett_svendsen@student.uml.edu
+	Copyright (c) 2022 by Brett Svendsen. All rights reserved. 
+	updated by Brett on 5/19, 2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WoW Class Overview</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+
+	<!-- 
+		This navigation pane will remain on the page regardless of scroll so users can site hop with ease.
+	-->
+
+	<ul id="navigation">
+		<li><a href="#druid">Druid</a></li>
+		<li><a href="#hunter">Hunter</a></li>
+		<li><a href="#mage">Mage</a></li>
+		<li><a href="#paladin">Paladin</a></li>
+		<li><a href="#priest">Priest</a></li>
+		<li><a href="#rogue">Rogue</a></li>
+		<li><a href="#shaman">Shaman</a></li>
+		<li><a href="#warlock">Warlock</a></li>
+		<li><a href="#warrior">Warrior</a></li>
+	</ul>
+
+	<header>World of Warcraft: Classic - Classes</header>
+
+	<!-- 
+		Kindof just an addhoc table. Wasn't planning on one but needed to add it.
+	-->
+
+	<div class="role-table">
+		<table>
+			<tr>
+				<th>Role</th>
+				<th>Class</th>
+			</tr>
+			<tr>
+				<td>Tank</td>
+				<td>Druid, Paladin, Warrior</td>
+			</tr>
+			<tr>
+				<td>DPS</td>
+				<td>Druid, Hunter, Mage, Paladin, Priest, Rogue, Shaman, Warlock, Warrior</td>
+			</tr>
+			<tr>
+				<td>Healer</td>
+				<td>Druid, Paladin, Priest, Shaman</td>
+			</tr>
+		</table>
+	</div>
+
+
+	<!-- 
+		This section is a list of elements to represent the classes. I wanted each to be a block that would stack depending on the size of the screen
+	 -->
+	<ul id="class-panels">
+		<li>
+			<div id="druid" class="class-bubble">
+				<div class="class-stats">
+					<div class="class-title">Da Druid</div>
+					<div class="class-roles"><strong>Roles:</strong> Tank, DPS, Healer</div>
+					<div class="class-races"><strong>Races:</strong> Night Elf, Tauren</div>
+					<div class="class-specs"><strong>Specs:</strong> Balance, Feral, Restoration</div>
+					<!-- <div class="class-skills"><strong>Skills:</strong> Axes (1H/2H), Maces (1H/2H), Swords (1H/2H), Polearms, Shields, off-hand items, Cloth, Leather, Mail, and Plate (starting level 40)</div> -->
+				</div>
+				<img class="class-img" src="img/druid.png" alt="Druid"/>
+				<br /> <br />				
+				<div class="class-desc"><strong>Description: </strong>Druids are the keepers of the world and masters of nature with a diverse array of abilities. They are powerful healers, capable of curing poisons and raising fallen comrades in the thick of battle. Druids also command nature's wrath, calling down ranged blasts of energy, summoning swarms of insects, or entangling their foes in the earth. But druids are also masters of the wild, able to shapeshift into a great bear, cat, or even sea lion, gaining their powers in combat or travel. Druids are a diverse class with a variety of playstyles, capable of filling any role.</div>
+				<br />
+				<div class="class-ability-header">Featured Abilities</div>
+				<div class="class-ability"><strong>Bear Form.</strong> Shapeshift into a bear, increasing melee attack power, armor contribution from items, and health.</div>
+				<div class="class-ability"><strong>Mark of the Wild.</strong> Increases the friendly target's armor, all attributes, and all resistances for 30 min.</div>
+				<div class="class-ability"><strong>Rebirth.</strong> Returns the spirit to the body, restoring a dead target to life.</div>
+			</div>
+		</li>
+		<li>
+			<div id="hunter" class="class-bubble">
+				<div class="class-stats">
+					<div class="class-title">Da Hunter</div>
+					<div class="class-roles"><strong>Roles:</strong> DPS</div>
+					<div class="class-races"><strong>Races:</strong> Night Elves, Dwarves, Orcs, Tauren, Trolls</div>
+					<div class="class-specs"><strong>Specs:</strong> Beastmaster, Marksman, Survival</div>
+					<!-- <div class="class-skills"><strong>Skills:</strong> Axes (1H/2H), Maces (1H/2H), Swords (1H/2H), Polearms, Shields, off-hand items, Cloth, Leather, Mail, and Plate (starting level 40)</div> -->
+				</div>
+				<img class="class-img" src="img/hunter.png" alt="Hunter"/>
+				<br /> <br />				
+				<div class="class-desc"><strong>Description: </strong>Hunters are deadly marksmen, capable of bringing their enemies down from a distance with bows or rifles. Skilled survivalists, they can track enemies or lay traps to damage and entrap their foes. Hunters also possess a primal connection to the beasts of Azeroth, capable of taming and training them to keep as loyal guardians. Wearing light to medium armor, hunters can also dual wield weapons in combat, fighting beside their pets in battle.</div>
+				<br />
+				<div class="class-ability-header">Featured Abilities</div>
+				<div class="class-ability"><strong>Tame Beast.</strong> Begins taming a beast to be your companion.</div>
+				<div class="class-ability"><strong>Tranquilizing Shot.</strong> Attempts to remove 1 Frenzy effect from an enemy creature.</div>
+				<div class="class-ability"><strong>Feign Death.</strong> Feign death which may trick enemies into ignoring you.  Lasts up to 6 min.</div>
+			</div>
+		</li>
+		<li>
+			<div id="mage" class="class-bubble">
+				<div class="class-stats">
+					<div class="class-title">Da Mage</div>
+					<div class="class-roles"><strong>Roles:</strong> DPS</div>
+					<div class="class-races"><strong>Races:</strong> Humans, Gnomes, Undead, Trolls</div>
+					<div class="class-specs"><strong>Specs:</strong> Arcane, Frost, Fire</div>
+					<!-- <div class="class-skills"><strong>Skills:</strong> Axes (1H/2H), Maces (1H/2H), Swords (1H/2H), Polearms, Shields, off-hand items, Cloth, Leather, Mail, and Plate (starting level 40)</div> -->
+				</div>
+				<img class="class-img" src="img/mage.png" alt="Mage"/>
+				<br /> <br />				
+				<div class="class-desc"><strong>Description: </strong>Mages wield the elements of fire, frost, and the arcane to destroy or neutralize their enemies. They are a robed class that excels at dealing massive damage from afar, casting elemental bolts at a single target, or raining destruction down upon their enemies in a wide area of effect. Mages can also augment their allies' spell-casting powers, summon food or drink to restore their friends, and even travel across the world in an instant by opening arcane portals to distant lands.</div>
+				<br />
+				<div class="class-ability-header">Featured Abilities</div>
+				<div class="class-ability"><strong>Blink.</strong> Teleports the caster 20 yards forward, unless something is in the way.  Also frees the caster from stuns and bonds.</div>
+				<div class="class-ability"><strong>Portal: {Location}.</strong> Creates a portal, teleporting group members that use it.</div>
+				<div class="class-ability"><strong>Fireball.</strong> Hurls a fiery ball that causes Fire damage and an additional Fire damage over 8 sec.</div>
+			</div>
+		</li>
+		<li>
+			<div id="paladin" class="class-bubble">
+				<div class="class-stats">
+					<div class="class-title">Da Paladin</div>
+					<div class="class-roles"><strong>Roles:</strong> Tank, DPS, Healer</div>
+					<div class="class-races"><strong>Races:</strong> Humans, Dwarves</div>
+					<div class="class-specs"><strong>Specs:</strong> Holy, Protection, Retribution</div>
+					<!-- <div class="class-skills"><strong>Skills:</strong> Axes (1H/2H), Maces (1H/2H), Swords (1H/2H), Polearms, Shields, off-hand items, Cloth, Leather, Mail, and Plate (starting level 40)</div> -->
+				</div>
+				<img class="class-img" src="img/paladin.png" alt="Paladin"/>
+				<br /> <br />				
+				<div class="class-desc"><strong>Description: </strong>Guardians of the Holy Light and defenders of the Alliance, paladins bolster their allies with holy auras and blessing to protect their friends from harm and enhance their powers. Wearing heavy armor, they can withstand terrible blows in the thickest battles while healing their wounded allies and resurrecting the slain. In combat, they can wield massive two-handed weapons, stun their foes, destroy undead and demons, and judge their enemies with holy vengeance. Paladins are a defensive class designed to outlast their opponents.</div>
+				<br />
+				<div class="class-ability-header">Featured Abilities</div>
+				<div class="class-ability"><strong>Holy Light.</strong> Heals a friendly target.</div>
+				<div class="class-ability"><strong>Hammer of Justice.</strong> Stuns the target for 3 sec.</div>
+				<div class="class-ability"><strong>Judgement.</strong> Unleashes the energy of a Seal spell upon an enemy.  Refer to individual Seals for Judgement effect.</div>
+			</div>
+		</li>
+		<li>
+			<div id="priest" class="class-bubble">
+				<div class="class-stats">
+					<div class="class-title">Da Priest</div>
+					<div class="class-roles"><strong>Roles:</strong> DPS, Healer</div>
+					<div class="class-races"><strong>Races:</strong> Humans, Dwarves, Night Elves, Undead, Trolls</div>
+					<div class="class-specs"><strong>Specs:</strong> Holy, Discipline, Shadow</div>
+					<!-- <div class="class-skills"><strong>Skills:</strong> Axes (1H/2H), Maces (1H/2H), Swords (1H/2H), Polearms, Shields, off-hand items, Cloth, Leather, Mail, and Plate (starting level 40)</div> -->
+				</div>
+				<img class="class-img" src="img/priest.png" alt="Priest"/>
+				<br /> <br />				
+				<div class="class-desc"><strong>Description: </strong>Priests are the masters of healing and preservation, restoring their wounded allies, shielding them in battle, and even resurrecting their fallen comrades. While they have a variety of protective and enhancement spells to bolster their allies, priests can also wreak terrible vengeance on their enemies, using the powers of shadow or holy light to destroy them. They are a diverse and powerful class, highly desirable in any group, capable of fulfilling multiple roles.</div>
+				<br />
+				<div class="class-ability-header">Featured Abilities</div>
+				<div class="class-ability"><strong>Prayer of Healing.</strong> A powerful prayer heals party members within 30 yards.</div>
+				<div class="class-ability"><strong>Holy Fire.</strong> Consumes the enemy in holy flames that cause Holy damage and additional Holy damage over 10 sec.</div>
+				<div class="class-ability"><strong>Power Word: Shield.</strong> Draws on the soul of the party member to shield them, absorbing damage. Lasts 30 sec.</div>
+			</div>
+		</li>
+		<li>
+			<div id="rogue" class="class-bubble">
+				<div class="class-stats">
+					<div class="class-title">Da Rogue</div>
+					<div class="class-roles"><strong>Roles:</strong> DPS</div>
+					<div class="class-races"><strong>Races:</strong> Gnomes, Humans, Dwarves, Night Elves,  Orcs, Undead, Trolls</div>
+					<div class="class-specs"><strong>Specs:</strong> Assassination, Combat, Subtlety</div>
+					<!-- <div class="class-skills"><strong>Skills:</strong> Axes (1H/2H), Maces (1H/2H), Swords (1H/2H), Polearms, Shields, off-hand items, Cloth, Leather, Mail, and Plate (starting level 40)</div> -->
+				</div>
+				<img class="class-img" src="img/rogue.png" alt="Rogue"/>
+				<br /> <br />				
+				<div class="class-desc"><strong>Description: </strong>Rogues are a lightly armored melee class capable of dealing massive damage to their enemies in a flurry of attacks. They are masters of stealth and assassination, passing by enemies unseen and striking from the shadows, then escaping from combat in the blink of an eye. Rogues can also craft poisons that damage or cripple their enemies, reducing their effectiveness in battle. Groups will find rogues valuable, for not only do they deal massive damage, but they can open locked doors or chests, and disarm hidden traps as well.</div>
+				<br />
+				<div class="class-ability-header">Featured Abilities</div>
+				<div class="class-ability"><strong>Backstab.</strong> Backstab the target, causing 150% weapon damage plus 15 to the target.</div>
+				<div class="class-ability"><strong>Blind.</strong> Blinds the target, causing it to wander disoriented for up to 10 sec.  Any damage caused will remove the effect.</div>
+				<div class="class-ability"><strong>Sap.</strong> Incapacitates the target for up to 25 sec.</div>
+			</div>
+		</li>
+		<li>
+			<div id="shaman" class="class-bubble">
+				<div class="class-stats">
+					<div class="class-title">Da Shaman</div>
+					<div class="class-roles"><strong>Roles:</strong> DPS, Healer</div>
+					<div class="class-races"><strong>Races:</strong> Orcs, Tauren, Trolls</div>
+					<div class="class-specs"><strong>Specs:</strong> Enhancement, Elemental, Restoration</div>
+					<!-- <div class="class-skills"><strong>Skills:</strong> Axes (1H/2H), Maces (1H/2H), Swords (1H/2H), Polearms, Shields, off-hand items, Cloth, Leather, Mail, and Plate (starting level 40)</div> -->
+				</div>
+				<img class="class-img" src="img/shaman.png" alt="Shaman"/>
+				<br /> <br />				
+				<div class="class-desc"><strong>Description: </strong>Shaman are the spiritual leaders of their tribes and clans. They are masters of the elements, using spells and totems that heal or enhance their allies in battle while unleashing the fury of the elements upon their foes. Shaman can wear medium armor, and even wield massive two-handed weapons in combat. They are a versatile class that can wade into battle, restoring their allies while hurling elemental bolts of lightning at their enemies.</div>
+				<br />
+				<div class="class-ability-header">Featured Abilities</div>
+				<div class="class-ability"><strong>Chain Lightning.</strong> Hurls a lightning bolt at the enemy, dealing Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects 3 total targets.</div>
+				<div class="class-ability"><strong>Healing Stream Totem.</strong> Summons a Healing Stream Totem with 5 health at the feet of the caster for 1 min that heals group members within 20 yards for 10 every 2 seconds..</div>
+				<div class="class-ability"><strong>Ghost Wolf.</strong> Turns the Shaman into a Ghost Wolf, increasing speed by 40%.  Only useable outdoors.</div>
+			</div>
+		</li>
+		<li>
+			<div id="warlock" class="class-bubble">
+				<div class="class-stats">
+					<div class="class-title">Da Warlock</div>
+					<div class="class-roles"><strong>Roles:</strong> DPS</div>
+					<div class="class-races"><strong>Races:</strong> Gnomes, Humans, Orcs, Undead</div>
+					<div class="class-specs"><strong>Specs:</strong> Affliction, Demonology, Destruction</div>
+					<!-- <div class="class-skills"><strong>Skills:</strong> Axes (1H/2H), Maces (1H/2H), Swords (1H/2H), Polearms, Shields, off-hand items, Cloth, Leather, Mail, and Plate (starting level 40)</div> -->
+				</div>
+				<img class="class-img" src="img/warlock.png" alt="Warlock"/>
+				<br /> <br />				
+				<div class="class-desc"><strong>Description: </strong>Warlocks are masters of shadow, flame, and demonic power. They are a robed class that excels at plaguing their enemies with disease or curses, hurling bolts of fire or shadow energy across the battlefield, and summoning demons to aid them in combat. While warlocks are powerful casters that deal damage from a distance, their demonic powers can also protect or support their allies in battle, or even summon other players from across the world using ritual magic to conjure portals.</div>
+				<br />
+				<div class="class-ability-header">Featured Abilities</div>
+				<div class="class-ability"><strong>Summon Voidwalker.</strong> Summons a Voidwalker under the command of the Warlock.</div>
+				<div class="class-ability"><strong>Hellfire.</strong> Ignites the area surrounding the caster, causing Fire damage to himself and Fire damage to all nearby enemies every 1 sec.  Lasts 15 sec.</div>
+				<div class="class-ability"><strong>Corruption.</strong> Corrupts the target, causing Shadow damage over 12 sec.</div>
+			</div>
+		</li>
+		<li>
+			<div id="warrior" class="class-bubble">
+				<div class="class-stats">
+					<div class="class-title">Da Warrior</div>
+					<div class="class-roles"><strong>Roles:</strong> Tank, DPS</div>
+					<div class="class-races"><strong>Races:</strong> All Races</div>
+					<div class="class-specs"><strong>Specs:</strong> Arms, Fury, Protection</div>
+					<!-- <div class="class-skills"><strong>Skills:</strong> Axes (1H/2H), Maces (1H/2H), Swords (1H/2H), Polearms, Shields, off-hand items, Cloth, Leather, Mail, and Plate (starting level 40)</div> -->
+				</div>
+				<img class="class-img" src="img/warrior.png" alt="Warrior"/>
+				<br /> <br />				
+				<div class="class-desc"><strong>Description: </strong>Warriors can be a raging berserker or an iron-clad juggernaut, capable of withstanding tremendous attacks while protecting their allies from harm. They have a wide variety of attacks that do everything from cripple their enemies, to dealing massive amounts of damage in a single retaliatory blow, and enhancing their allies' fighting ability with battle shouts. They excel at fighting multiple opponents at once, gaining rage from every blow dealt or received to unleash their attacks. Warriors are a versatile class with a variety of play-styles to choose from.</div>
+				<br />
+				<div class="class-ability-header">Featured Abilities</div>
+				<div class="class-ability"><strong>Whirlwind.</strong> In a whirlwind of steel you attack up to 4 enemies within 8 yards, causing weapon damage to each enemy.</div>
+				<div class="class-ability"><strong>Battle Shout.</strong> The warrior shouts, increasing the melee attack power of all party members within 20 yards by 20.  Lasts 2 min.</div>
+				<div class="class-ability"><strong>Charge.</strong> Charge an enemy, generate 9 rage, and stun it for 1 sec.  Cannot be used in combat.</div>
+			</div>
+		</li>
+	</ul>
+
+
+	<!--  
+		Silly footer because I can
+	-->
+	<footer>(c) The Big Berd Corperation LLC., Division 13 of the Paris accords DDD., 9th Section of the Magna Carta, 24th year of Akatosh 433 <br />I'm just writing things</footer>
+
+</body>
+</html>
